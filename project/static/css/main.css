@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 14px/18px Arial, Tahoma, Verdana, sans-serif;
+}
+p {margin: 0 0 18px}
+img {border: none}
+input {vertical-align: middle}
+input:focus,
+select:focus,
+textarea:focus {outline: none}
+.clear {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #555;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+#inner_wrapper {
+    width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#header {
+    padding: 20px 0 10px 0;
+}
+
+#topmenu {
+    padding: 10px 0 20px 0;
+}
+
+#topmenu li {
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+}
+
+#topmenu a {
+    font-size: 18px;
+}
+
+ul.linklist {
+    margin: 10px 0 0 25px;
+}
+
+#content {
+    margin-top: 5px;
+}
+
+#footer {
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+    margin-top: 20px;
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+ul.errorlist, .message {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul.errorlist li, .message {
+    margin-bottom: 10px;
+    padding: 5px 13px 5px 33px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    border: 1px solid #aaa;
+    display: inline-block;
+
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+}
+
+ul.errorlist li {
+    background-image: url(/media/images/icons/error.png);
+    background-color: #ffe6db;
+    border:1px solid #eebeb1;
+    color:#993300;
+}
+
+.success {
+    background-image: url(/media/images/icons/accept.png);
+    background-color: #e8fecd;
+    border:1px solid #c7ea8b;
+    color:#398c33;
+}
+
+.error {
+    background-image: url(/media/images/icons/error.png);
+    background-color: #ffe6db;
+    border:1px solid #eebeb1;
+    color:#993300;
+}
+
+.info {
+    background-image: url(/media/images/icons/info.png);
+    background-color: #FFC;
+    border:1px solid #E7DF8A;
+    color:#827A30;
+}
+
+.warning {
+    background-image: url(/media/images/icons/warning.png);
+    background-color: #ffffcc;
+    border:1px solid #e7df8a;
+    color:#827a30;
+}
+
+.partner_nav {
+    margin-bottom: 20px;
+}
+
+.partner_nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 5px;
+}
+
+.datatable {
+    width: 100%;
+    font-size: 13px;
+    border-collapse: collapse;
+}
+
+.datatable th {
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0 !important;
+    background-color: #fafafa;
+}
+
+.datatable th, .datatable td {
+    border: 1px solid #ccc;
+    padding: 2px 4px;
+    vertical-align: top;
+}
+
+.hidden {
+    display: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.pagination {
+    margin-top: 10px;
+    text-align: center;
+}

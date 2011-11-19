@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% load uni_form_tags %}
+
+{% block title %}Регистрация{% endblock %}
+
+{% block content %}
+
+    <form method="post" action="" class="uniForm" style="width: 500px; margin: auto 0;">
+        {% csrf_token %}
+
+        <input type="hidden" name="next" value="/">
+
+        <div class="ctrlHolder">
+            <h3>Регистрация</h3>
+        </div>
+
+        {{ form|as_uni_form }}
+
+        <div class="ctrlHolder">
+            <input type="submit" value="Зарегистрироваться" />
+        </div>
+    </form>
+
+    <script type="text/javascript">document.getElementById("id_username").focus();</script>
+{% endblock %}

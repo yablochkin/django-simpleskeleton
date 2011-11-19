@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load uni_form_tags %}
+
+{% block content %}
+    <form method="post" action="" class="uniForm" style="width: 500px; margin: auto 0;">
+        {% csrf_token %}
+
+        <div class="ctrlHolder">
+            <h3>Редактирование записи</h3>
+        </div>
+
+        {{ form|as_uni_form }}
+
+        <div class="ctrlHolder">
+            <input type="submit" value="Войти" />
+        </div>
+    </form>
+
+    <script type="text/javascript">document.getElementById("id_title").focus();</script>
+{% endblock %}

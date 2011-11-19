@@ -1,0 +1,5 @@
+*.pyc
+env
+#local_settings.py
+logs/*
+project/media/entries/*
