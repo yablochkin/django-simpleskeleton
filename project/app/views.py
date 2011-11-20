@@ -12,7 +12,7 @@ import datetime
 
 
 def hello(request):
-    #messages.success(request, _(u'Регистрация прошла успешно. Теперь можно перейти к созданию вашего первого объявления.'))
+    #messages.success(request, _(u'Что-то произошло.'))
     return direct_to_template(request, 'app/hello.html', {
             'title': 'hello world'
         })
@@ -23,7 +23,7 @@ def edit(request, entry_id):
     form = CampaignForm(request.POST or None, instance=entry)
     if form.is_valid():
         form.save()
-        messages.success(request, _(u'Кампания изменена успешно.'))
+        messages.success(request, _(u'Сущность отредакирована успешно.'))
         return redirect(campaigns)
     return direct_to_template(request, 'app/edit_entry.html', {
             'form': form
