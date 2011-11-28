@@ -12,9 +12,11 @@ How to use
 3. Build virtualenv. Current directory is important - root of the project.
 
 ::
+
     ./build/buidenv.sh
 
 4. Go to ./project/ and do syncdb or whatever.
 
 ::
+
     ./manage.py ...
