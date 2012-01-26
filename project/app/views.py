@@ -7,6 +7,7 @@ from django.shortcuts import redirect
 from django.http import HttpResponse
 from django.contrib import messages
 from project.app.models import Entry
+from project.app.forms import EntryForm
 from json import dumps
 import datetime
 
@@ -19,8 +20,8 @@ def hello(request):
 
 @login_required
 def edit(request, entry_id):
-    entry = get_object_or_404(Entry, id=campaign_id, user=request.user)
-    form = CampaignForm(request.POST or None, instance=entry)
+    entry = get_object_or_404(Entry, id=entry_id, user=request.user)
+    form = EntryForm(request.POST or None, instance=entry)
     if form.is_valid():
         form.save()
         messages.success(request, _(u'Сущность отредакирована успешно.'))
