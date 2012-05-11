@@ -91,35 +91,35 @@ ul.errorlist li, .message {
 }
 
 ul.errorlist li {
-    background-image: url(/media/images/icons/error.png);
+    background-image: url(/static/images/icons/error.png);
     background-color: #ffe6db;
     border:1px solid #eebeb1;
     color:#993300;
 }
 
 .success {
-    background-image: url(/media/images/icons/accept.png);
+    background-image: url(/static/images/icons/accept.png);
     background-color: #e8fecd;
     border:1px solid #c7ea8b;
     color:#398c33;
 }
 
 .error {
-    background-image: url(/media/images/icons/error.png);
+    background-image: url(/static/images/icons/error.png);
     background-color: #ffe6db;
     border:1px solid #eebeb1;
     color:#993300;
 }
 
 .info {
-    background-image: url(/media/images/icons/info.png);
+    background-image: url(/static/images/icons/info.png);
     background-color: #FFC;
     border:1px solid #E7DF8A;
     color:#827A30;
 }
 
 .warning {
-    background-image: url(/media/images/icons/warning.png);
+    background-image: url(/static/images/icons/warning.png);
     background-color: #ffffcc;
     border:1px solid #e7df8a;
     color:#827a30;

@@ -1,7 +1,7 @@
-django==1.3.1
+django==1.4
 django-pagination
 django-uni-form
-django-imagekit==0.4.1
+django-imagekit
 django-sentry
 django-admin-tools
 -e git://github.com/Bers/django-simplereg.git#egg=simplereg
@@ -12,7 +12,7 @@ south
 
 pillow
 
-django-celery
-celery
+#django-celery
+#celery
 
 flup

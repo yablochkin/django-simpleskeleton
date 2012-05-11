@@ -103,6 +103,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'django.core.context_processors.csrf',
     'django.core.context_processors.request',
+    'django.contrib.messages.context_processors.messages',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -125,6 +126,8 @@ TEMPLATE_DIRS = (
     os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
 )
 
+SENTRY_DSN = 'http://key@host/project_id'
+
 INSTALLED_APPS = (
     'admin_tools',
     'admin_tools.theming',
@@ -140,17 +143,12 @@ INSTALLED_APPS = (
     'django.contrib.admin',
 
     # external
-    #'south',
+    'south',
     'uni_form',
     'imagekit',
     'pagination',
     'simplereg',
-
-    # sentry
-    'indexer',
-    'paging',
-    'sentry',
-    'sentry.client',
+    'raven.contrib.django',
 
     'app',
 )
