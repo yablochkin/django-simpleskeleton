@@ -1,18 +1,24 @@
-django==1.4
+# basic
+django==1.5.1
 django-pagination
 django-uni-form
-django-imagekit
-django-sentry
-django-admin-tools
--e git://github.com/Bers/django-simplereg.git#egg=simplereg
-
-pylibmc
-mysql-python
 south
+pylibmc
+mysql-python==1.2.3  # 1.2.4 with buggy dependencies
+-e git://github.com/brack3t/django-braces.git#egg=braces
 
+#django-admin-tools
+#-e git://github.com/Bers/django-simplereg.git#egg=simplereg
+
+# debuging
+django-debug-toolbar
+raven
+
+# images
+django-imagekit
 pillow
 
 #django-celery
 #celery
 
-flup
+uwsgi

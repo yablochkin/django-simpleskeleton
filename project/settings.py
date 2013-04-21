@@ -116,7 +116,6 @@ MIDDLEWARE_CLASSES = (
 )
 
 AUTHENTICATION_BACKENDS = (
-    'simplereg.backend.EmailAuthBackEnd',
     'django.contrib.auth.backends.ModelBackend',
 )
 
@@ -126,14 +125,9 @@ TEMPLATE_DIRS = (
     os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
 )
 
-SENTRY_DSN = 'http://key@host/project_id'
+#SENTRY_DSN = 'http://key@host/project_id'
 
 INSTALLED_APPS = (
-    'admin_tools',
-    'admin_tools.theming',
-    'admin_tools.menu',
-    'admin_tools.dashboard',
-
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -147,19 +141,15 @@ INSTALLED_APPS = (
     'uni_form',
     'imagekit',
     'pagination',
-    'simplereg',
     'raven.contrib.django',
 
-    'app',
+    'project.user',
 )
 
-#AUTH_PROFILE_MODULE = 'app.Profile'
+AUTH_USER_MODEL = 'user.User'
 LOGIN_REDIRECT_URL = '/'
 LOGIN_URL = '/login/'
 LOGOUT_URL = '/logout/'
-
-ADMIN_TOOLS_MENU = 'project.menu.CustomMenu'
-ADMIN_TOOLS_INDEX_DASHBOARD = 'project.dashboard.CustomIndexDashboard'
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
