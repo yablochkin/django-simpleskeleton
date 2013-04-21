@@ -15,8 +15,4 @@ How to use
 
     ./build/buidenv.sh
 
-4. Go to ./project/ and do syncdb or whatever.
-
-::
-
-    ./manage.py ...
+4. Edit local_settings.py, run ./manage.py syncdb or whatever. It's Your Job!
